@@ -13,7 +13,7 @@ body>#app {
     text-align: center;
 }
 
-.title{
+.title {
     margin: 0.3em 0;
     font-size: 4em;
 }
@@ -22,39 +22,46 @@ body>#app {
     background-image: url('https://raw.githubusercontent.com/nisrulz/android-dev-wrapped-generator/master/public/base_template.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    margin-left: 30%;
     height: 50em;
     color: white;
+    width: 31%;
+    float: left;
 }
 
-.content > .pt1{
-   padding-top: 10em; 
-   padding-right: 2.3em;
+.content>.pt1 {
+    padding-top: 8.5em;
+    padding-left: 1.5em;
 }
 
-.content > .pt2{
-    padding-top: 6em;
-    padding-right: 14em;
- }
+.content>.pt2 {
+    padding-top: 5.5em;
+    text-align: start;
+    padding-left: 8.7em;
+}
 
- .content > .pt3{
-    padding-top: 4em; 
-    padding-right: 14.5em;
- }
+.content>.pt3 {
+    padding-top: 4.8em;
+    text-align: start;
+    padding-left: 8.7em;
+}
 
- .content > .pt4{
-    padding-top: 5em; 
-    padding-right: 14em;
- }
+.content>.pt4 {
+    padding-top: 4.3em;
+    text-align: start;
+    padding-left: 8.7em;
+}
 
- .content > .pt5{
-    padding-top: 4em; 
-    padding-right: 13em;
- }
+.content>.pt5 {
+    padding-top: 3.8em;
+    text-align: start;
+    padding-left: 8.9em;
+}
 
 .information {
-    margin-top: 20px;
     text-align: center;
+    width: 31%;
+    float: right;
+    margin: 3em;
 }
 
 .information p {
@@ -71,16 +78,52 @@ body>#app {
     border-radius: 6px;
 }
 
-
-
 /* Column */
 
 div.left {
     float: left;
-    width: 50%;
+    width: 30%;
 }
 
 div.right {
     float: right;
     width: 50%;
 }
+
+/* Button Animation */
+button {
+    margin: 50px;
+    font-family: inherit;
+}
+
+/* Fill button styling */
+.fill {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.fill::after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.fill:hover::after {
+    top: 0px;
+    left: 0px;
+}
+
+/* End of Slide Button  */

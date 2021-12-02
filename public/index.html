@@ -19,16 +19,14 @@
   <!-- Content -->
     <div id='app'>
       <p class="title">#AndroidDev Wrapped 2021</p>
-      <div class="left" id="render">
-        <div class='content' >
-          <h3 class="pt1">{{ executedCommands }}</h3>
-          <h3 class="pt2">{{ forgotPermission }}</h3>
-          <h3 class="pt3">{{ daggerWars }}</h3>
-          <h3 class="pt4">{{ gradleBuildTime }}</h3>
-          <h3 class="pt5">{{ confusedWord }}</h3>
-        </div>
+      <div class='content' id="render" >
+        <h3 class="pt1">{{ executedCommands }}</h3>
+        <h3 class="pt2">{{ forgotPermission }}</h3>
+        <h3 class="pt3">{{ daggerWars }}</h3>
+        <h3 class="pt4">{{ gradleBuildTime }}</h3>
+        <h3 class="pt5">{{ confusedWord }}</h3>
       </div>
-      <div class="right information">
+      <div class="information">
         <p>Most executed command</p>
           <input v-model='executedCommands'>
 
@@ -44,7 +42,7 @@
           <p>Most confused word used</p>
           <input v-model='confusedWord'>
 
-          <button v-on:click="downloadImg">Download</button>
+          <button v-on:click="downloadImg" type="button" class="fill">DOWNLOAD</button>
       </div>
     </div>
 
