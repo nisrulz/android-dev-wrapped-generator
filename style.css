@@ -1,0 +1,86 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+body>#app {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.title{
+    margin: 0.3em 0;
+    font-size: 4em;
+}
+
+.content {
+    background-image: url('https://raw.githubusercontent.com/nisrulz/android-dev-wrapped-generator/master/base_template.jpg?token=AAP7XVZTN6YB4QDPDCXBJMTBVEO7U');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 30%;
+    height: 50em;
+    color: white;
+}
+
+.content > .pt1{
+   padding-top: 10em; 
+   padding-right: 2.3em;
+}
+
+.content > .pt2{
+    padding-top: 6em;
+    padding-right: 14em;
+ }
+
+ .content > .pt3{
+    padding-top: 4em; 
+    padding-right: 14.5em;
+ }
+
+ .content > .pt4{
+    padding-top: 5em; 
+    padding-right: 14em;
+ }
+
+ .content > .pt5{
+    padding-top: 4em; 
+    padding-right: 13em;
+ }
+
+.information {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.information p {
+    text-align: left;
+    margin: 0 0 5px 0;
+    font-weight: 500;
+}
+
+.information input {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+
+
+/* Column */
+
+div.left {
+    float: left;
+    width: 50%;
+}
+
+div.right {
+    float: right;
+    width: 50%;
+}

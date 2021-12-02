@@ -2,34 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>#AndroidDev Wrapped 2021</title>
+  <meta charset="UTF-8">
+  <title>#AndroidDev Wrapped 2021</title>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-    <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Content -->
-    <center>
-        <h1>#AndroidDev Wrapped 2021</h1>
+  <!-- Content -->
+    <div id='app'>
+      <p class="title">#AndroidDev Wrapped 2021</p>
+      <div class="left" id="render">
+        <div class='content' >
+          <h3 class="pt1">{{ executedCommands }}</h3>
+          <h3 class="pt2">{{ forgotPermission }}</h3>
+          <h3 class="pt3">{{ daggerWars }}</h3>
+          <h3 class="pt4">{{ gradleBuildTime }}</h3>
+          <h3 class="pt5">{{ confusedWord }}</h3>
+        </div>
+      </div>
+      <div class="right information">
+        <p>Most executed command</p>
+          <input v-model='executedCommands'>
 
-        <img
-            src="https://raw.githubusercontent.com/nisrulz/android-dev-wrapped-generator/master/base_template.jpg?token=AAP7XV3VZ7QFXXALP5BHGBLBVEJPI" />
-    </center>
+          <p>Times forgot to add INTERNET permission</p>
+          <input v-model='forgotPermission'>
 
-    <!-- Scripts -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js"
-        integrity="sha512-adgfzougYIGhG3Tpb47fZLuMwaULLJQdujqOeWFoGc7vwFvBrFkhaPkJPId5swgdr122mghL/ysQk4oiabmRCQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./script.js"></script>
+          <p>Watched flame wars on Dagger</p>
+          <input v-model='daggerWars'>
+
+          <p>Gradle build time accumulated</p>
+          <input v-model='gradleBuildTime'>
+
+          <p>Most confused word used</p>
+          <input v-model='confusedWord'>
+
+          <button v-on:click="downloadImg">Download</button>
+      </div>
+    </div>
+
+
+  <!-- Scripts -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js"
+    integrity="sha512-adgfzougYIGhG3Tpb47fZLuMwaULLJQdujqOeWFoGc7vwFvBrFkhaPkJPId5swgdr122mghL/ysQk4oiabmRCQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
