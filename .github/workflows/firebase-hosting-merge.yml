@@ -4,6 +4,11 @@
 name: Deploy to Firebase Hosting on merge
 'on':
   push:
+    paths-ignore:
+      - 'README.md'
+      - 'LICENSE'
+      - 'output.jpg'
+      - 'screenshot.png'
     branches:
       - master
 jobs:
