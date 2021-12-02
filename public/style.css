@@ -27,6 +27,7 @@ body>#app {
     color: white;
     width: 31%;
     float: left;
+    margin-left: 20%;
 }
 
 .content>.pt1 {
@@ -63,6 +64,7 @@ body>#app {
     width: 31%;
     float: right;
     margin: 3em;
+    margin-right: 12%;
 }
 
 .information p {
@@ -75,8 +77,8 @@ body>#app {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    margin-bottom: 10px;
-    border-radius: 6px;
+    margin-bottom: 30px;
+    border-radius: 8px;
 }
 
 /* Column */
