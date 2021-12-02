@@ -1,70 +1,54 @@
-body {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Poppins', sans-serif;
-    background-color: #f9ad03;
-}
-
-body>#app {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-
 .title {
     margin: 0.3em 0;
     font-size: 4em;
+    text-align: center;
+    font-weight: 500;
 }
 
 .content {
     background-image: url('https://raw.githubusercontent.com/nisrulz/android-dev-wrapped-generator/master/public/base_template.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 50em;
+    height: 612px;
     color: white;
-    width: 31%;
-    float: left;
-    margin-left: 20%;
+    background-position: top right;
+}
+
+.content>p {
+    font-size: 20px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px
 }
 
 .content>.pt1 {
-    padding-top: 8.5em;
-    padding-left: 1.5em;
+    top: 130px;
+    left: 50px;
 }
 
 .content>.pt2 {
-    padding-top: 5.5em;
-    text-align: start;
-    padding-left: 8.7em;
+    top: 190px;
+    left: 45px;
 }
 
 .content>.pt3 {
-    padding-top: 4.8em;
-    text-align: start;
-    padding-left: 8.7em;
+    top: 230px;
+    left: 48px;
 }
 
 .content>.pt4 {
-    padding-top: 4.3em;
-    text-align: start;
-    padding-left: 8.7em;
+    top: 265px;
+    left: 48px;
 }
 
 .content>.pt5 {
-    padding-top: 3.8em;
-    text-align: start;
-    padding-left: 8.9em;
+    top: 299px;
+    left: 50px;
 }
 
 .information {
-    text-align: center;
-    width: 31%;
-    float: right;
-    margin: 3em;
-    margin-right: 12%;
+    text-align: left;
 }
 
 .information p {
@@ -79,18 +63,6 @@ body>#app {
     padding: 10px 0;
     margin-bottom: 30px;
     border-radius: 8px;
-}
-
-/* Column */
-
-div.left {
-    float: left;
-    width: 30%;
-}
-
-div.right {
-    float: right;
-    width: 50%;
 }
 
 /* Button Animation */
