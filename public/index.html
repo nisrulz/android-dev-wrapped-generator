@@ -6,8 +6,8 @@
   <title>#AndroidDev Wrapped 2021</title>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./skeleton.css">
   <link rel="stylesheet" href="./style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,34 +17,44 @@
 
 <body>
   <!-- Content -->
-    <div id='app'>
-      <p class="title">#AndroidDev Wrapped 2021</p>
-      <div class='content' id="render" >
-        <h3 class="pt1">{{ executedCommands }}</h3>
-        <h3 class="pt2">{{ forgotPermission }}</h3>
-        <h3 class="pt3">{{ daggerWars }}</h3>
-        <h3 class="pt4">{{ gradleBuildTime }}</h3>
-        <h3 class="pt5">{{ confusedWord }}</h3>
-      </div>
-      <div class="information">
-        <p>Most executed command</p>
-          <input v-model='executedCommands'>
+  <div id='app'>
+    <p class="title">#AndroidDev Wrapped 2021</p>
 
-          <p>Times forgot to add INTERNET permission</p>
-          <input v-model='forgotPermission'>
+    <div>
+      <div class="row">
+        <div class="one-half column">
+          <div class='content' id="render">
+            <p class="pt1">{{ executedCommands }}</p>
+            <p class="pt2">{{ forgotPermission }}</p>
+            <p class="pt3">{{ daggerWars }}</p>
+            <p class="pt4">{{ gradleBuildTime }}</p>
+            <p class="pt5">{{ confusedWord }}</p>
+          </div>
+        </div>
+        <div class="one-half column">
+          <div class="information">
+            <p>Most executed command</p>
+            <input v-model='executedCommands'>
 
-          <p>Watched flame wars on Dagger</p>
-          <input v-model='daggerWars'>
+            <p>Times forgot to add INTERNET permission</p>
+            <input v-model='forgotPermission'>
 
-          <p>Gradle build time accumulated</p>
-          <input v-model='gradleBuildTime'>
+            <p>Watched flame wars on Dagger</p>
+            <input v-model='daggerWars'>
 
-          <p>Most confused word used</p>
-          <input v-model='confusedWord'>
+            <p>Gradle build time accumulated</p>
+            <input v-model='gradleBuildTime'>
 
-          <button v-on:click="downloadImg" type="button" class="fill">DOWNLOAD</button>
+            <p>Most confused word used</p>
+            <input v-model='confusedWord'>
+
+            <button v-on:click="downloadImg" type="button" class="button button-primary">Download</button>
+          </div>
+
+        </div>
       </div>
     </div>
+  </div>
 
 
   <!-- Scripts -->
