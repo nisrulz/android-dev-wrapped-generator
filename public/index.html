@@ -2,14 +2,38 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
   <title>#AndroidDev Wrapped 2021</title>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="./normalize.css">
-  <link rel="stylesheet" href="./skeleton.css">
-  <link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A simple web app to generate your own Android Dev Wrapped!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="copyright" content="Nishant Srivastava">
+  <meta name="author" content="Nishant Srivastava, nisrulz@gmail.com">
 
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="icon" sizes="192x192" href="./favicon/android-chrome-192x192.png">
+
+  <!-- Add to homescreen for Chrome on Android-->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Add to homescreen for Safari on iOS-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="#AndroidDev Wrapped 2021">
+  <!-- Tile icon for Win8 (144x144 + tile color)-->
+  <meta name="msapplication-TileColor" content="#3372DF">
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/skeleton.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
@@ -32,7 +56,7 @@
           </div>
         </div>
         <div class="one-half column">
-          <div class="information">
+          <div class="information u-max-full-width">
             <p>Most executed command</p>
             <input v-model='executedCommands'>
 
@@ -49,8 +73,11 @@
             <input v-model='confusedWord'>
 
             <button v-on:click="downloadImg" type="button" class="button button-primary">Download</button>
+            <br />
+            <a href="https://github.com/nisrulz/android-dev-wrapped-generator" target="_blank"
+              rel="noopener noreferrer">Check Code in Github</a>
+            <a href="https://www.buymeacoffee.com/nisrulz" target="_blank" rel="noopener noreferrer">Buy me a ☕</a>
           </div>
-
         </div>
       </div>
     </div>
@@ -58,11 +85,9 @@
 
 
   <!-- Scripts -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js"
-    integrity="sha512-adgfzougYIGhG3Tpb47fZLuMwaULLJQdujqOeWFoGc7vwFvBrFkhaPkJPId5swgdr122mghL/ysQk4oiabmRCQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./script.js"></script>
+  <script src='./js/vue.min.js'></script>
+  <script src="./js/html2canvas.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
