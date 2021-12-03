@@ -1,6 +1,3 @@
-body{
-    background-color: #f9ad03;
-}
 .title {
     margin: 0.3em 0;
     font-size: 4em;
@@ -52,6 +49,7 @@ body{
 
 .information {
     text-align: left;
+    margin-top: 35px;
 }
 
 .information p {
