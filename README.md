@@ -1,8 +1,6 @@
-<center>
-
 # AndroidDev Wrapped Generator
 
-A simple web app to generate your own Android Dev Wrapped!
+A simple [web app](https://nisrulz.com/android-dev-wrapped-generator/) to generate your own Android Dev Wrapped!
 
 ![Screenshot](screenshot.png)
 
@@ -13,5 +11,3 @@ A simple web app to generate your own Android Dev Wrapped!
 ## License
 
 [AGPL 3.0](LICENSE)
-
-</center>
